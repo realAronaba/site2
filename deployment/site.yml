@@ -1,0 +1,8 @@
+---
+
+- hosts: webservers
+  become: true
+  tasks:
+  - name: "deploiement du fronted"
+    include_role:
+      name: fronted

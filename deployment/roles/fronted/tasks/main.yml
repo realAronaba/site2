@@ -16,7 +16,7 @@
     name:  "{{ server_name }}"
     image: "aronaba/mywebserver:v1"
     volumes:
-      - "/home/docker/vol_shared:/data"
+      - "{{ directory_root }}:/data"
     ports:
       - " {{ access_port }}:{{ http_port_expose }} "
     state: started

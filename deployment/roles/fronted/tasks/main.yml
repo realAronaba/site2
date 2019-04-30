@@ -7,13 +7,13 @@
 
 - name: delete container if exist
   docker_container:
-    name: "{{ server_name }}
+    name: "{{ server_name }}"
     image: "aronaba/mywebserver:v1"
     state: absent
 
 - name: Running the container
   docker_container:
-    name:  "{{ server_name }}""
+    name:  "{{ server_name }}"
     image: "aronaba/mywebserver:v1"
     volumes:
       - "/home/docker/vol_shared:/data"

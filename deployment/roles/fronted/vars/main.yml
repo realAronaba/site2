@@ -1,4 +1,0 @@
-http_port_expose: "80"
-access_port: "8070"
-server_name: "webserver"
-directory_root: /home/docker/vol_shared
